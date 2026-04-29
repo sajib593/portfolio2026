@@ -2,7 +2,7 @@ import Container from "../layout/Container";
 
 const About = () => {
   return (
-    <section className="section">
+    <section id="about" className="section">
       <Container>
         <div className="max-w-3xl">
 

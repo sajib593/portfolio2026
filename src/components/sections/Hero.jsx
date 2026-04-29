@@ -1,12 +1,17 @@
 import Container from "../layout/Container";
 import Button from "../ui/Button";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <section className="section">
         
       <Container>
-        <div className="flex flex-col gap-6 max-w-2xl">
+        <motion.div 
+         initial={{ opacity: 0, y: 30 }}
+         animate={{ opacity: 1, y: 0 }}
+         transition={{ duration: 0.6 }}
+         className="flex flex-col gap-6 max-w-2xl">
 
           <h1 className="heading-xl">
             Hi, I'm Sajib Hossain
@@ -25,7 +30,7 @@ const Hero = () => {
             <Button>Contact Me</Button>
           </div>
 
-        </div>
+        </motion.div>
       </Container>
     </section>
   );
