@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+
+/* Base styles */
+body {
+  @apply bg-white text-gray-900 font-sans;
+}
+
+/* Container spacing fix (optional global) */
+.section {
+  @apply py-20;
+}
+
+/* Headings */
+.heading-xl {
+  @apply text-4xl md:text-6xl font-bold leading-tight;
+}
+
+.heading-lg {
+  @apply text-3xl md:text-4xl font-semibold;
+}
+
+/* Paragraph */
+.text-base {
+  @apply text-gray-600 text-lg leading-relaxed;
+}
