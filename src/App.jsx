@@ -1,3 +1,4 @@
+import Footer from "./components/layout/Footer"
 import Navbar from "./components/layout/Navbar"
 import About from "./components/sections/About"
 import Contact from "./components/sections/Contact"
@@ -12,19 +13,14 @@ function App() {
  
 
   return (
-    <>
+    
      <div className={dark ? "dark" : ""}>
 
-      <button
-        onClick={() => setDark(!dark)}
-        className="fixed top-4 right-4 z-50"
-      >
-        Toggle
-      </button>
+     
 
 
 
-      <Navbar></Navbar>
+      <Navbar dark={dark} setDark={setDark}></Navbar>
 
       <Hero></Hero>
 
@@ -34,11 +30,13 @@ function App() {
 
       <Contact></Contact>
 
+      <Footer></Footer>
+
      </div>
 
       
       
-    </>
+    
   )
 }
 

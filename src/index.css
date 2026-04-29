@@ -1,23 +1,21 @@
 @import "tailwindcss";
 
-
-
+/* Smooth scroll */
 html {
   scroll-behavior: smooth;
 }
 
-
-.dark body {
+/* Dark mode root */
+.dark {
   @apply bg-gray-900 text-white;
 }
-
 
 /* Base styles */
 body {
   @apply bg-white text-gray-900 font-sans;
 }
 
-/* Container spacing fix (optional global) */
+/* Section spacing */
 .section {
   @apply py-20;
 }
@@ -33,5 +31,5 @@ body {
 
 /* Paragraph */
 .text-base {
-  @apply text-gray-600 text-lg leading-relaxed;
+  @apply text-gray-600 dark:text-gray-300 text-lg leading-relaxed;
 }
